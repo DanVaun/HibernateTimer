@@ -5,7 +5,9 @@ A lightweight native Windows utility that exposes the hibernate timeout hidden b
 \---
 
 **Download program here**
-[https://github.com/DanVaun/HibernateTimer/releases/tag/v1.0.0link text]([https://github.com/DanVaun/HibernateTimer/releases/tag/v1.0.0)
+[https://github.com/DanVaun/HibernateTimer/releases/tag/v1.0.0](https://github.com/DanVaun/HibernateTimer/releases/tag/v1.0.0)
+
+\---
 
 ## Why does this exist?
 
