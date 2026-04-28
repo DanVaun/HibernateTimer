@@ -4,6 +4,9 @@ A lightweight native Windows utility that exposes the hibernate timeout hidden b
 
 \---
 
+**Download program here**
+[https://github.com/DanVaun/HibernateTimer/releases/tag/v1.0.0link text]([https://github.com/DanVaun/HibernateTimer/releases/tag/v1.0.0)
+
 ## Why does this exist?
 
 Modern Windows laptops use **Modern Standby (S0)** instead of the older **S3 sleep** standard. On S0 systems, Windows deliberately hides the hibernate timer from both the modern Settings app and the legacy Control Panel — even though hibernate itself works perfectly and is already exposed in the lid and power button controls.
@@ -38,6 +41,13 @@ On S0 systems, the hibernate timer and sleep timer are **independent countdowns*
 This is different from older S3 systems where sleep was a prerequisite step before hibernate. On S0 they are completely independent, so **set hibernate shorter than sleep** if you want it to actually activate.
 
 The screen timeout, sleep timer, and hibernate timer are the only settings this app exposes. The broader power plan settings (processor state, PCI Express, etc.) are intentionally excluded — S0 power management is dynamic and managed cooperatively by Windows and the firmware. Changing those static S3-era settings on an S0 system can interfere with the dynamic power manager and produce worse results than leaving them alone.
+
+\---
+
+**💤 Sleep vs. ❄️ Hibernate: Which should I use?**
+Sleep: Keeps your open apps in the RAM. It’s nearly instant to wake up, but it still uses a tiny bit of power. Windows might occasionally "wake up" on its own for updates or background tasks.
+Hibernate: Saves your open apps to your SSD/Hard Drive and turns the power off completely. It takes a few seconds longer to wake up, but your PC is 100% off. No random wake-ups, and no battery drain.
+This tool is perfect if you want to ensure your computer stays off and saves your work exactly where you left it.
 
 \---
 
@@ -83,6 +93,14 @@ The app uses only Win32 API and standard Windows libraries — no external depen
 ## Code signing
 
 This application is signed through [SignPath Foundation](https://signpath.org) which provides free code signing for open source projects. This means Windows will show a verified publisher name instead of "Unknown Publisher" in the UAC prompt.
+
+\---
+
+🔒 **## Privacy Policy**
+Hibernate Timer is a zero-dependency, local-only utility.
+No Data Collection: The application does not collect, store, or transmit any personal data or usage statistics.
+No Internet Access: The program does not connect to the internet.
+Local Only: All settings (if any) are stored locally on your own machine.
 
 \---
 
